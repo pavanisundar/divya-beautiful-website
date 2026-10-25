@@ -1,26 +1,360 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    \, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya | My Beautiful World</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #ffe4ec, #e8ddff, #fff1d6);
+            color: #49344f;
+            line-height: 1.7;
+        }
+
+        header {
+            text-align: center;
+            padding: 55px 20px;
+            background: linear-gradient(135deg, #a4508b, #5f0a87);
+            color: white;
+            border-radius: 0 0 45px 45px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        nav {
+            text-align: center;
+            padding: 18px;
+        }
+
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: #8b2778;
+            background: white;
+            padding: 9px 16px;
+            margin: 5px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #a4508b;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 15px 20px 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.92);
+            padding: 28px;
+            margin: 22px 0;
+            border-radius: 22px;
+            box-shadow: 0 8px 25px rgba(110, 50, 100, 0.12);
+            border-left: 6px solid #d66ba0;
+        }
+
+        h2 {
+            color: #9b347e;
+            margin-bottom: 15px;
+        }
+
+        .hero {
+            text-align: center;
+            border-left: none;
+            border-top: 6px solid #c56cb0;
+        }
+
+        .emoji {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 7px 15px;
+            margin: 5px;
+            background: #f8dff0;
+            color: #852c72;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .family-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .family-member {
+            text-align: center;
+            background: #fff0f6;
+            padding: 18px;
+            border-radius: 16px;
+            border: 1px solid #f4c8df;
+        }
+
+        .family-member .emoji {
+            font-size: 32px;
+        }
+
+        .highlight {
+            color: #d04486;
+            font-weight: bold;
+        }
+
+        .quote {
+            background: linear-gradient(135deg, #f8d9ee, #e8ddff);
+            padding: 25px;
+            text-align: center;
+            border-radius: 18px;
+            font-style: italic;
+            font-size: 19px;
+        }
+
+        footer {
+            text-align: center;
+            background: #5f0a67;
+            color: white;
+            padding: 25px;
+            border-radius: 30px 30px 0 0;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 33px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Heading range from h1 to h6</h1>
-    <h1 style = "color: blue; text-align: center; background-color:red">KodNest</h1>
-    <h2>KodNest</h2>
-    <h3>KodNest</h3>
-    <h4>KodNest</h4>
-    <h5>KodNest</h5>
-    <h6>KodNest</h6>
-    <p contenteditable="True" style="color:aqua">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, enim suscipit aliquam nam exercitationem tenetur sequi aspernatur, aut in provident neque error, sed harum hic facilis eos nesciunt quas dolorum.</p>
-    <p>My  Name is <br>
-        pavani
-    </p>
-    <!-- pre - Performed Tag ctrl + / -->
-     <pre>My  Name is 
-        Pavani
-     </pre>
+
+    <header>
+        <div class="emoji">🌸 👑 🌸</div>
+        <h1>Welcome to Divya's World 💖</h1>
+        <p>A Beautiful Soul • A Dedicated Professional • A Loving Family Person</p>
+        <p>✨ Dream Big, Work Hard, Stay Kind ✨</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#career">Career</a>
+        <a href="#skills">Skills</a>
+        <a href="#family">My Family</a>
+        <a href="#favorites">Favorites</a>
+    </nav>
+
+    <main class="container">
+
+        <section class="card hero" id="about">
+            <div class="emoji">💗</div>
+            <h2>Hello, I'm Divya!</h2>
+
+            <p>
+                I am a confident, caring, and hardworking person who believes
+                that every day is a new opportunity to learn and grow.
+                I love improving myself, achieving my goals, and making
+                beautiful memories with my family.
+            </p>
+
+            <p>
+                My life motto is:
+                <span class="highlight">
+                    Be independent, stay humble, and never stop learning!
+                </span> 🌷
+            </p>
+        </section>
+
+        <section class="card" id="career">
+            <h2>💼 My Professional Journey</h2>
+
+            <p>
+                I completed my <strong>Bachelor of Commerce (B.Com)</strong>
+                and am currently pursuing my
+                <strong>Master of Business Administration (MBA)</strong>.
+            </p>
+
+            <p>
+                I have <strong>3 years of work experience at
+                Triphm Company</strong>, where I have gained professional
+                experience and learned the importance of responsibility,
+                accuracy, and teamwork.
+            </p>
+
+            <h3>📋 Job Description – Accountant</h3>
+
+            <p>
+                As an accounting professional, I have learned Tally and
+                developed an understanding of accounting and financial
+                records. My goal is to strengthen my accounting knowledge
+                and continue growing in my career.
+            </p>
+
+            <ul>
+                <li>📒 Maintaining accounting records.</li>
+                <li>🧾 Learning to record sales, purchases, and expenses.</li>
+                <li>💻 Using Tally for accounting-related work.</li>
+                <li>📊 Supporting financial record keeping and reports.</li>
+                <li>🤝 Working responsibly with colleagues and teams.</li>
+                <li>🎯 Improving my professional and management skills.</li>
+            </ul>
+
+            <p>
+                <em>
+                    These are typical accounting responsibilities; the
+                    exact duties depend on her actual role.
+                </em>
+            </p>
+        </section>
+
+        <section class="card" id="skills">
+            <h2>🌟 My Skills & Strengths</h2>
+
+            <div>
+                <span class="tag">📘 Tally</span>
+                <span class="tag">🧮 Accounting Basics</span>
+                <span class="tag">📚 B.Com Graduate</span>
+                <span class="tag">🎓 MBA Student</span>
+                <span class="tag">🤝 Teamwork</span>
+                <span class="tag">⏰ Time Management</span>
+                <span class="tag">💡 Willingness to Learn</span>
+                <span class="tag">🌷 Positive Attitude</span>
+            </div>
+
+            <h3 style="margin-top: 20px;">💖 What Makes Me Special?</h3>
+
+            <p>
+                I believe that kindness is strength, learning is growth,
+                and consistency is the key to success. I try to give my
+                best in both my professional and personal life.
+            </p>
+        </section>
+
+        <section class="card" id="family">
+            <h2>🏡 My Beautiful Family</h2>
+
+            <p>
+                My family is my biggest support system, my happiness,
+                and my strength. Every member has a special place in my heart.
+            </p>
+
+            <div class="family-grid">
+
+                <div class="family-member">
+                    <div class="emoji">👩‍🦳</div>
+                    <h3>Krishnamma</h3>
+                    <p>My Loving Mom ❤️</p>
+                </div>
+
+                <div class="family-member">
+                    <div class="emoji">👨‍👧</div>
+                    <h3>Somasundar</h3>
+                    <p>My Caring Dad 💙</p>
+                </div>
+
+                <div class="family-member">
+                    <div class="emoji">👩</div>
+                    <h3>Mamatha</h3>
+                    <p>My Younger Sister 🌷</p>
+                </div>
+
+                <div class="family-member">
+                    <div class="emoji">👩‍❤️‍👩</div>
+                    <h3>Pavani</h3>
+                    <p>My Elder Sister 💕</p>
+                </div>
+
+                <div class="family-member">
+                    <div class="emoji">👧🏻</div>
+                    <h3>Shanu</h3>
+                    <p>My Favorite Daughter 🥹💖</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="card" id="favorites">
+            <h2>🍕 My Favorite Things</h2>
+
+            <p>
+                Everyone has little things that make life happier.
+                Here are some favorites to personalize my page!
+            </p>
+
+            <p>🍕 Favorite food: <strong>Pizza</strong></p>
+            <p>🎨 Favorite colors: <strong>Pink and Purple</strong></p>
+            <p>🎶 Favorite activity: <strong>Listening to Music</strong></p>
+            <p>👨‍👩‍👧‍👦 Favorite people: <strong>My Family</strong></p>
+            <p>🌈 Favorite feeling: <strong>Being Surrounded by Love</strong></p>
+
+            <p style="margin-top: 15px;">
+                <em>
+                    Food and personal preferences above are sample choices.
+                    You can change them to Divya's real favorites.
+                </em>
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>🌻 My Dreams & Goals</h2>
+
+            <ul>
+                <li>💼 Build a successful career in accounting and finance.</li>
+                <li>🎓 Complete my MBA successfully.</li>
+                <li>📈 Keep learning new tools and professional skills.</li>
+                <li>💰 Become financially independent.</li>
+                <li>🏡 Make my family proud and happy.</li>
+                <li>💖 Create a bright future filled with love and success.</li>
+            </ul>
+        </section>
+
+        <section class="quote">
+            🌸 "A beautiful heart, a determined mind,
+            and a loving family make life truly special." 🌸
+            <p><strong>— Divya's Little World 💕</strong></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <h3>Made with Love for Divya 💖</h3>
+        <p>✨ Keep Smiling • Keep Growing • Keep Shining ✨</p>
+        <p>© 2026 | Divya's Personal Webpage 🌷</p>
+    </footer>
+
 </body>
 </html>
